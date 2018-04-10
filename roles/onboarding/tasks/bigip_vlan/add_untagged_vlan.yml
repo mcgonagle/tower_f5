@@ -5,9 +5,9 @@
     password: "{{ password }}"
     server: "{{ inventory_hostname }}"
     name: "{{ item.name }}"
-    untagged_interface: "{{ item.untagged_interface }}" 
+    untagged_interface: "{{ item.untagged_interface |default(omit) }}" 
     state: "present"
     validate_certs: "no"
   delegate_to: localhost
-  with_items: "{{ servers }}"
+  with_items: "{{ vlans }}"
 ...

@@ -1,16 +1,16 @@
 ---
 - include_tasks: bigip_vlan/add_untagged_vlan.yml 
   vars: 
-    servers:
-      - { name: "vlan_1_3", untagged_interface: "1.2" }
-      - { name: "vlan_1_4", untagged_interface: "1.2" }
-      - { name: "vlan_1_5", untagged_interface: "1.2" }
-      - { name: "vlan_1_6", untagged_interface: "1.2" }
-      - { name: "vlan_1_7", untagged_interface: "1.2" }
-      - { name: "vlan_1_8", untagged_interface: "1.2" }
-      - { name: "vlan_1_9", untagged_interface: "1.2" }
-      - { name: "vlan_1_10", untagged_interface: "1.2" }
-      - { name: "vlan_1_11", untagged_interface: "1.2" }
-      - { name: "vlan_1_12", untagged_interface: "1.2" }
-      - { name: "vlan_1_13", untagged_interface: "1.2" }
+    vlans:
+      - { name: "vlan_1_3", untagged_interface: "1.3" }
+      - { name: "vlan_1_4", untagged_interface: "1.4" }
+      - { name: "vlan_1_5", untagged_interface: "1.5" }
+      - { name: "vlan_1_6", untagged_interface: "1.6" }
+      - { name: "vlan_1_7", untagged_interface: "1.7" }
+      - { name: "vlan_1_8", untagged_interface: "1.8" }
+      - { name: "vlan_1_9", untagged_interface: "1.9" }
+      - { name: "vlan_1_10", untagged_interface: "1.10" }
+      - { name: "vlan_1_11", untagged_interface: "1.11" }
+      - { name: "vlan_1_12", untagged_interface: "1.12" }
+      - { name: "vlan_1_13", untagged_interface: "1.13" }
 ...
