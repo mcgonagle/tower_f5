@@ -2,7 +2,6 @@
 - include_tasks: bigip_vlan/add_untagged_vlan.yml 
   vars: 
     servers:
-      - { name: vlan_1_3, untagged_interface: "1.3" }
-      - { name: vlan_1_4, untagged_interface: "1.4" }
-  with_items: "{{ servers }}"
+      - { name: "vlan_1_3", untagged_interface: "1.3" }
+      - { name: "vlan_1_4", untagged_interface: "1.4" }
 ...

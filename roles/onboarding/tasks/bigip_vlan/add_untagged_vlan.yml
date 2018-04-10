@@ -4,9 +4,10 @@
     user: "{{ username }}"
     password: "{{ password }}"
     server: "{{ inventory_hostname }}"
-    name: "{{ name }}"
-    untagged_interface: "{{ untagged_interface }}" 
+    name: "{{ item.name }}"
+    untagged_interface: "{{ item.untagged_interface }}" 
     state: "present"
     validate_certs: "no"
   delegate_to: localhost
+  with_items: "{{ servers }}"
 ...
