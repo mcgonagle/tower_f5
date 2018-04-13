@@ -13,4 +13,5 @@
       - { name: "vlan_1_11", untagged_interface: "1.11" }
       - { name: "vlan_1_12", untagged_interface: "1.12" }
       - { name: "vlan_1_13", untagged_interface: "1.13" }
+  tags: vlan
 ...
